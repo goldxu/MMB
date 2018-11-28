@@ -90,9 +90,8 @@
 </script>
 <script type="text/html" id="categoryListTpl">
     {{each result value}}
-
     <!--小分类-->
-    <a class="" href="#" data-categoryid="{{value.categoryId}}">{{value.category}}</a>
+    <a href="productList.html?categoryid={{value.categoryId}}" data-categoryid="{{value.categoryId}}">{{value.category}}</a>
 
 
     {{/each}}
