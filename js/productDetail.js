@@ -1,5 +1,5 @@
 $(function () {
-  let productId = getQueryString("productId");
+  let productId = getQueryString("productId")||1;
   $.ajax({
     url : "http://localhost:9090/api/getproduct",
     data : {productid :productId},
@@ -27,7 +27,6 @@ $(function () {
   })
   $(".reback .categoty").on("tap",function () {
     let categoryId = $(this).data("id");
-    console.log(categoryId);
     location.href = "productList.html?categoryId="+categoryId;
   })
   mui('.mui-scroll-wrapper').scroll({
