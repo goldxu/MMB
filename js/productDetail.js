@@ -1,5 +1,5 @@
 $(function () {
-  let productId = getQueryString("productId");
+  let productId = getQueryString("productId")||1;
   $.ajax({
     url : "http://localhost:9090/api/getproduct",
     data : {productid :productId},
@@ -27,12 +27,8 @@ $(function () {
   })
   $(".reback .categoty").on("tap",function () {
     let categoryId = $(this).data("id");
-    console.log(categoryId);
     location.href = "productList.html?categoryId="+categoryId;
   })
-  mui('.mui-scroll-wrapper').scroll({
-    deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
-  });
 })
 function getQueryString(name) {
   var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");

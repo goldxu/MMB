@@ -1,8 +1,12 @@
 @import "base";
+header {
+  background-color: #fff;
+}
 body {
   padding-bottom: 0;
 }
 #main {
+  height: auto;
   .product-list-title {
     height: .4rem;
     box-sizing: border-box;
@@ -66,16 +70,26 @@ body {
     }
   }
   .product-bottom {
-    padding: 0 1rem;
-    height: .3rem;
+    padding: .1rem 0;
+    display: flex;
+    justify-content: space-around;
     span {
       float: left;
       line-height: .3rem;
       font-size: .14rem;
+      width: .8rem;
+      text-align: center;
+      border: 1px solid @border-color;
+      border-radius: 5px;
       //padding: 0  0.5rem;
-      &.after {
-        float: right;
-      }
+    }
+    select {
+      box-sizing: border-box;
+      margin: 0;
+      height: .3rem;
+      width: auto;
+      padding: 0  0.25rem;
+      border: 1px solid @border-color !important;
     }
   }
 }
@@ -108,7 +122,7 @@ footer {
     border-top: 0.01rem solid #ccc;
     border-bottom: 0.01rem solid #ccc;
     margin: 0.1rem 0;
-    display: block;
+    display: flex;
     >a {
       flex:1;
       font-size: 0.14rem;
