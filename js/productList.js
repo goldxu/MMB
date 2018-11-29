@@ -24,6 +24,7 @@ $(function () {
   $("#num").on("change",function () {
     productList.pageId = +this.value;
     productList.getProductList();
+    location = location.search+"#";
   })
 })
 
