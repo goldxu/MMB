@@ -58,9 +58,9 @@
     <!-- <section><i class="fa fa-arrow-circle-up"></i></section> -->
 
     <script id="saveMoneyTpl" type="text/html">
-        {{each result value index}}
+        {{each result value}}
             <li class="mui-table-view-cell mui-media">
-              <a href="save-sale.html?productid={{value[index].productId}}">
+              <a href="save-sale.html?productid={{value.productId}}">
                   <!-- 媒体列表的左边 -->
               <div class="mui-pull-left product-left">
                 {{@value.productImgSm}}
