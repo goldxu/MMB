@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <title>国内折扣</title>
+    <link rel="stylesheet" type="text/css" href="lib/mui/css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet/less" href="less/discount-product.less">
+    <script src="lib/less/less.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header id="header">
+        <div class="head-box">
+            <a href="inland-Discount.html" class="fa fa-angle-left">
+            </a>
+            <span>国内折扣</span>
+            <div class="download-app">
+                <a class="header-app" href="#"><img src="images/header_app.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <!-- 内容 -->
+    <main id="main">
+        <div class="section">
+            <div class="title">西域美农新疆特产五星和田红枣250g*2</div>
+            <div class="price">19.8元(5件99元)</div>
+            <br>
+            <div class="info">
+                京东商城|10-22 13:28
+                <span>迷失的七月/慢慢买</span>
+            </div>
+            <br>
+            <div class="content">原价撒递交王炯大家玩极地阿基我攻击机熊积极哦原价撒递交王炯大家玩极地阿基我攻击机熊积极哦原价撒递交王炯大家玩极地阿基我攻击机熊积极哦</div>
+            <img src="//m.360buyimg.com/mobilecms/s307x307_jfs/t19090/319/1066219433/230527/8c6f591/5abb2377N0c944672.jpg!q70.jpg"
+                alt="">
+            
+            <br>
+            <div class="golink">
+                <a href="#">前往购买</a>
+                <br>
+            </div>
+        </div>
+    </main>
+    <div style="text-align: center;margin: 20px 10px; "  >
+        <img src="images/mmbweixin2.png" width="100%" height="auto" alt="">
+    </div>
+    <!-- 评论部分 -->
+    <div class="comment">
+        <span>发表评论</span>
+        <textarea rows="4" cols="20">
+        </textarea>
+        <div class="publish ">
+            <div class="publish-comment">
+                <input type="submit" value="发表评论">
+            </div>
+        </div>
+        <br>
+        <span>最新评论</span>
+        <div class="new-comment">
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell mui-media">
+                    <a href="javascript:;">
+                        <img class="mui-media-object mui-pull-left" src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3776145133,4223196415&fm=26&gp=0.jpg">
+                        <div class="mui-media-body">
+                            赶鸭子上架
+                            <span id="time">2018年11月29日10:46:05</span>
+                            <p class='mui-ellipsis'>比超市便宜了几块</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <footer id="footer">
+        <div class="toolBar">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#main" class="top"><img src="images/top.jpg" alt="">返回顶部</a>
+        </div>
+        <div class="siteInfo">
+            <p><a href="#" class="download">手机app下载</a><span>慢慢买手机版--掌上比价平台</span></p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+    <!-- 商品详情模板 -->
+    <script id="productTpl" type="text/html">
+        {{each result value }}
+        <div class="title">{{value.productName}}</div>
+            <div class="price">{{value.productPrice}}</div>
+            <br>
+            <div class="info">
+                    {{value.productFrom}}{{value.productTime}}
+                <span>{{value.productTips}}</span>
+            </div>
+            <br>
+            <div class="content">{{value.productInfo}}</div>
+            {{@value.productImg}}
+            <br>
+            <div class="golink">
+                <a href="" data-id="{{value.productId}}">前往购买</a>
+              
+            </div>
+            {{/each}}
+    </script>
+    <!-- 最新评论的模板 -->
+    <!-- <script id="commentTpl" type="text/html">
+        {{each result value}}
+        {{@value.productComment}}
+        {{/each}}
+    </script> -->
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/discount-product.js"></script>
+</body>
+
+</html>

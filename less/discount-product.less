@@ -1,0 +1,130 @@
+@import "base.less";
+/*header*/
+body {
+    padding: .39rem 0 1.02rem;
+}
+#header {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    height: .4rem;
+    background-color: #ff841d;
+    .head-box {
+        padding: 0 .06rem;
+        border: 0px;
+        .fa-angle-left {
+            font-size: .30rem;
+            color: @font-color;
+        }
+        span {
+            flex: 1;
+            text-align: center;
+            font-size: .18rem;
+            line-height: .4rem;
+            color: @font-color;
+        }
+        .download-app {
+            padding-top: .05rem;
+            a {
+                background-size: .3rem .3rem;
+                display: block;
+                img {
+                    width: .30rem;
+                    height: .30rem;
+                }
+            }
+        }
+    }
+}
+
+#main{
+    overflow: hidden;
+    width: 100%;
+    padding: 0 .07rem;
+    height: 100%;
+    .title{
+    font-size: .18rem;
+    font-weight: 800;
+    text-align: left;
+    text-align-last: left;
+    word-break: break-all;
+    color: #5a5a5a;
+    line-height: normal;
+    }
+    .price{
+        color: #ff6c00;
+        display: block;
+        font-size: .15rem;
+    }
+    .info{
+        margin: 0px 4px;
+    }
+    span{
+        margin-right: 4px;
+    }
+    .golink{
+        a{
+            display: block;
+            margin: 20px 10px;
+            background: #FF9000;
+            height: 30px;
+            border-radius: 4px;
+            line-height: 30px;
+            text-align: center;
+            font-size: 14px;
+            color: #ffffff;
+        }
+    }
+    .content{
+    font-size: 16px;
+    word-break: break-all;
+    line-height: 24px;
+    color: #606060;
+    }
+    img{
+        width: 2.4rem;
+        height: 2.8rem;
+    }
+    #picbox{
+        height: 2rem;
+        border: 1px solid red;
+    }
+}
+
+.comment{
+    padding: 0 .07rem;
+    height: 3.7rem;
+    span{
+        font-size: .16rem;
+    }
+    textarea{
+        padding: 0;
+        margin: 0;
+    }
+    .publish{
+        margin-top: -0.07rem;
+        height: .3rem;
+        position: relative;
+        
+        .publish-comment{
+            width: 100%;    
+            border: 1px  solid #cccccc;
+            border-top: 0px;
+            height: .35rem;
+            background-color: #fbfbfb;
+        }
+        input{
+            height: .35rem;
+            width: .8rem;
+          position: absolute;
+          right: .01rem;
+          background-color: #ff841d;
+          border-color: #fbfbfb;
+    }
+}
+#time{
+    font-size: .12rem;
+   position: absolute;
+   right: 0;
+}
+}
